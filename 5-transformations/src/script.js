@@ -9,6 +9,10 @@ const size = {
 /* Setup Scene */
 const scene = new THREE.Scene();
 
+/* Axes Helper */
+const axesHelper = new THREE.AxesHelper(2);
+scene.add(axesHelper);
+
 /* Create a Red Cube */
 const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
 const redMaterial = new THREE.MeshBasicMaterial({
